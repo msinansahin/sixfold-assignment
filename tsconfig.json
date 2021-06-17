@@ -1,0 +1,25 @@
+{
+  "compilerOptions": {
+    "lib": [
+      "es5",
+      "es6"
+    ],
+    "target": "es5",
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "noImplicitAny": true,
+    "removeComments": true,
+    "preserveConstEnums": true,
+    "sourceMap": true,
+    "outDir": "./build",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true
+  },
+  "files": [
+    "src/app.ts",
+    "src/domain.ts"
+  ],
+
+  "include": ["src/**/*"],
+  "exclude": ["node_modules", "**/*.spec.ts"]
+}

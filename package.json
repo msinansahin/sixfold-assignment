@@ -1,0 +1,41 @@
+{
+  "name": "sixfold",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "test:coverage": "jest --coverage",
+    "test:watch": "jest --coverage --watchAll",
+    "build": "tsc",
+    "build:watch": "onchange 'src/**/*.ts' -- npm run build",
+    "view:coverage": "serve coverage/lcov-report",
+    "clean": "rm -rf coverage src/**/*.js src/**/*.map",
+    "start": "ts-node src/index.ts"
+  },
+  "keywords": [],
+  "author": "mehmet sinan sahin",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/jest": "^26.0.23",
+    "@types/node": "^8.10.66",
+    "@types/source-map-support": "^0.5.3",
+    "jest": "^27.0.4",
+    "nyc": "^15.1.0",
+    "onchange": "^7.1.0",
+    "serve": "^12.0.0",
+    "source-map-support": "^0.5.19",
+    "ts-jest": "^27.0.3",
+    "ts-node": "^3.3.0",
+    "typescript": "^3.9.10"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "ngraph.graph": "^19.1.0",
+    "ngraph.path": "^1.3.1",
+    "pg": "^8.6.0",
+    "reflect-metadata": "^0.1.10",
+    "typeorm": "0.2.34",
+    "typescript-require": "^0.3.0"
+  }
+}
